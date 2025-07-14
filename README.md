@@ -134,7 +134,7 @@ async def page():
 
 7.      context = await browser.new_context() :--->  Creates a new browser context (like incognito mode).
 
-8.      page = await context.new_page()   :--->  Opens a fresh new browser tab.
+8.      page = await context.new_page()  :--->  Opens a fresh new browser tab.
 
 9.    yield page  :--->  Yields the page to the test; pauses here until test completes.
 
@@ -157,7 +157,7 @@ async def test_orangehrm_login(page):
     assert await page.is_visible("h6:has-text('Dashboard')")
 ```
 
----
+-----------------------------------------
 
 ## ▶️ How to Run the Test
 
@@ -284,6 +284,6 @@ pytest tests/test_orangehrm_login.py -s -v
 ```
 ## 📝 Disclaimer
 
-> This project uses the public demo site of OrangeHRM for educational and testing purposes only.  
+> This project uses the public demo site of OrangeHRM for educational and testing purposes only. 
 > All rights belong to OrangeHRM Inc.  
-> 🔗 [https://opensource-demo.orangehrmlive.com/]
+> 🔗 https://opensource-demo.orangehrmlive.com/
