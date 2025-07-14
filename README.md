@@ -1,20 +1,4 @@
-Absolutely! Below is a **clean, complete, professional, and copy-paste-ready `README.md`** file for your Week 1 project: `week1_orangehrm_login_test`.
 
-This version includes:
-
-* ✅ Project overview
-* ✅ What you’ll learn
-* ✅ Full project structure (properly aligned)
-* ✅ Step-by-step setup
-* ✅ Test execution
-* ✅ GitHub push instructions
-* ✅ Best practices
-
----
-
-### ✅ Copy everything below and save as your `README.md` file:
-
-```markdown
 # 🧪 Week 1: OrangeHRM Login Test Using Playwright and Pytest
 
 This project is part of a full QA Automation Engineer learning path using Playwright with Python.
@@ -37,10 +21,10 @@ In **Week 1**, you’ll automate the login functionality of the [OrangeHRM Demo 
 
 ```
 
-week1\_orangehrm\_login\_test/
+week1_orangehrm_login_test/ 
 ├── venv/                        # Python virtual environment (ignored in Git)
 ├── tests/
-│   └── test\_orangehrm\_login.py  # Main test case for OrangeHRM login
+│   └── test_orangehrm_login.py  # Main test case for OrangeHRM login
 ├── conftest.py                 # Pytest fixture for Playwright page object
 ├── requirements.txt            # All required packages
 ├── .gitignore                  # Git ignore rules
@@ -213,13 +197,7 @@ git push -u origin main
 
 ---
 
-## ⏭️ What’s Next (Week 2 Preview)
 
-* Use Page Object Model (POM)
-* Store test data in JSON format
-* Add screenshots on failure
-* Add test reports (Allure)
-* Run tests using Docker + GitHub Actions
 
 
 ```
