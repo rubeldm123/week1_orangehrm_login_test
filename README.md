@@ -184,18 +184,6 @@ git push -u origin main
 ✅ Done! Visit:
 `https://github.com/yourusername/week1_orangehrm_login_test`
 
----
-
-## 🧠 Best Practices
-
-| Tip                      | Why                                                |
-| ------------------------ | -------------------------------------------------- |
-| Use `.gitignore`         | Prevents unnecessary files from being uploaded     |
-| Keep a clean `README.md` | Helps others (and yourself) understand the project |
-| Use virtual environments | Avoids global conflicts with dependencies          |
-| Structure folders early  | Easier to scale into a full framework (Week 2+)    |
-
----
 
 
 
