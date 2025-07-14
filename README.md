@@ -120,6 +120,19 @@ async def page():
         await browser.close()
 ```
 
+1      import pytest_asyncio             :--->  Imports the plugin that allows you to write async def fixtures using Pytest.
+2      from playwright.async_api import async_playwright  :--->  Loads Playwright's async APIs to control browsers using await.
+4      @pytest_asyncio.fixture           :--->  Declares this function as an asynchronous fixture for Pytest.
+5      async def page():                 :--->  Defines a reusable async fixture named 'page'.
+6      async with async_playwright() as p:--->  Starts the Playwright engine inside an async context manager.
+7      browser = await p.chromium.launch(headless=False) :--->  Launches Chromium browser (not headless so UI is visible).
+8      context = await browser.new_context() :--->  Creates a new browser context (like incognito mode).
+9      page = await context.new_page()   :--->  Opens a fresh new browser tab.
+10     yield page                        :--->  Yields the page to the test; pauses here until test completes.
+11     await browser.close()             :--->  Closes the browser after the test finishes.
+
+
+
 #### 🔹 `tests/test_orangehrm_login.py`
 
 ```python
