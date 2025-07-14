@@ -260,3 +260,8 @@ pytest tests/test_orangehrm_login.py -s -v
 > ⚠️ **Note**: The `venv/` folder is excluded from GitHub to keep your repository clean. That’s why each user must create and activate their own local virtual environment after cloning the project.
 
 ```
+## 📝 Disclaimer
+
+> This project uses the public demo site of OrangeHRM for educational and testing purposes only.  
+> All rights belong to OrangeHRM Inc.  
+> 🔗 [https://opensource-demo.orangehrmlive.com/]
