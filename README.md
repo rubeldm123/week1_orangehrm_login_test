@@ -185,7 +185,78 @@ git push -u origin main
 `https://github.com/yourusername/week1_orangehrm_login_test`
 
 
+-------------------------------------------------------------------------
 
+## 🧑‍💻 How to Clone and Run This Project Locally
 
+Since the `venv/` (virtual environment) folder is not included in GitHub for best practices, follow these steps to set up and run the project on your local machine after cloning:
+
+---
+
+### 1️⃣ Clone the Repository
+
+Replace `yourusername` with your actual GitHub username:
+
+```bash
+git clone https://github.com/yourusername/week1_orangehrm_login_test.git
+cd week1_orangehrm_login_test
+````
+
+---
+
+### 2️⃣ Create and Activate a Virtual Environment
+
+#### 🔹 For macOS/Linux:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### 🔹 For Windows:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+---
+
+### 3️⃣ Install Project Dependencies
+
+```bash
+pip install -r requirements.txt
+python -m playwright install
+```
+
+This installs all Python dependencies and the required Playwright browsers (Chromium, Firefox, WebKit).
+
+---
+
+### 4️⃣ Run the Test
+
+```bash
+pytest tests/test_orangehrm_login.py -s -v
+```
+
+✅ If everything is set up correctly, the browser will open, log into the OrangeHRM demo site, and validate that the Dashboard is visible.
+
+---
+
+### ✅ Quick Recap
+
+| Step             | Command                                               |
+| ---------------- | ----------------------------------------------------- |
+| Clone repo       | `git clone <repo-url>`                                |
+| Navigate         | `cd week1_orangehrm_login_test`                       |
+| Create venv      | `python3 -m venv venv` or `python -m venv venv`       |
+| Activate venv    | `source venv/bin/activate` or `venv\Scripts\activate` |
+| Install packages | `pip install -r requirements.txt`                     |
+| Install browsers | `python -m playwright install`                        |
+| Run test         | `pytest -s -v`                                        |
+
+---
+
+> ⚠️ **Note**: The `venv/` folder is excluded from GitHub to keep your repository clean. That’s why each user must create and activate their own local virtual environment after cloning the project.
 
 ```
